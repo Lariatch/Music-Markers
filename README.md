@@ -3,10 +3,21 @@ Blender addon to add markers to the timeline for animating to music.
 
 ## Installation
 Edit > Preferences > Add-ons > Install > musicmakers.zip
-
-## Usage
 Functionality found in sidebar of 3D viewport. Press N to bring out.
 
+## Usage
+
+The format for naming markers is as follows:
+
+  In 4/4:
+  
+    1, 1.2, 1.3, 1.4, 2, 2.2, 2.3 etc.
+  If set to 3/4:
+  
+    1, 1.2, 1.3, 2, 2.2, 2.3 etc.
+    
+  Currently, changing the denominator of the time signature does not work. 1 beat is always set to a quarter note.
+  
 ### Tap Tempo
 Tap this button once per beat to automatically calculate a BPM value.
 
