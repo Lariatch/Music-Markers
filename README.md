@@ -2,7 +2,7 @@
 Blender addon to add markers to the timeline for animating to music.
 
 ## Installation
-Edit > Preferences > Add-ons > Install > musicmakers.zip
+Edit > Preferences > Add-ons > Install > musicmarkers.zip
 Functionality found in sidebar of 3D viewport. Press N to bring out.
 
 ## Usage
