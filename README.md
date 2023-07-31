@@ -38,10 +38,10 @@ Beats per measure.
 Length of a beat. Currently this is locked to quarter notes. Changing this value does nothing at the moment.
 
 ### Frame Range:
-This will determine the range of the timeline to set markers in.
+This will determine the range of the timeline to set markers in. If they are set to 0 the blend files timeline range is used.
 
 #### Start Frame
-The frame the first marker is placed on. If this is set to 0 than the start frame of the timeline is used.
+The frame the first marker is placed on.
 
 #### End Frame
 The last frame considered for placing markers.
