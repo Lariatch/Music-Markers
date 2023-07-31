@@ -5,6 +5,7 @@ Blender addon to add markers to the timeline for animating to music.
 Edit > Preferences > Add-ons > Install > musicmakers.zip
 
 ## Usage
+Functionality found in sidebar of 3D viewport. Press N to bring out.
 
 ### Tap Tempo
 Tap this button once per beat to automatically calculate a BPM value.
