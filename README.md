@@ -41,8 +41,11 @@ The frame the first marker is placed on. If this is set to 0 than the start fram
 #### End Frame
 The last frame considered for placing markers.
 
+### FPS
+Value is taken from the blend file. Located in the 'Output Properties' tab.
+
 ### Set markers
-Sets new markers on the timeline based off of the values of the above fields, and the FPS in Blender's 'Output Properties' tab. This will clear all markers on the timeline, including those not created by the addon before placing new ones.
+Sets new markers on the timeline based off of the values of the above fields. This will clear all markers on the timeline, including those not created by the addon before placing new ones.
 
 ### Clear Markers
 Clears all markers on the timeline, including those not created by the addon.
