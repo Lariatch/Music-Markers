@@ -39,7 +39,7 @@ The beats per minute used to calculate distance between frames.
 Beats per measure.
 
 #### Denominator
-Length of a beat. Currently this is locked to quarter notes. Changing this value does nothing at the moment.
+Length of a beat. A value of 8 sets the length to 8th notes, 16 = 16th notes etc
 
 ### Frame Range:
 This will determine the range of the timeline to set markers in. If they are set to 0 the blend files timeline range is used.
