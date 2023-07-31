@@ -15,8 +15,10 @@ The format for naming markers is as follows:
   If set to 3/4:
   
     1, 1.2, 1.3, 2, 2.2, 2.3
-    
-  Currently, changing the denominator of the time signature does not work. 1 beat is always set to a quarter note.
+  If set to 6/8:
+    1, 1.2, 1.3, 1.4, 1.5, 1.6
+    with markers placed every 8th note.
+  
   
 ### Tap Tempo
 Tap this button once per beat to automatically calculate a BPM value.
@@ -41,8 +43,8 @@ The frame the first marker is placed on. If this is set to 0 than the start fram
 #### End Frame
 The last frame considered for placing markers.
 
-### FPS
-Value is taken from the blend file. Located in the 'Output Properties' tab.
+### Framerate
+Sets the framerate used to calculate marker distance. If 'Sync' is checked the scenes framerate will copy this value.
 
 ### Set markers
 Sets new markers on the timeline based off of the values of the above fields. This will clear all markers on the timeline, including those not created by the addon before placing new ones.
