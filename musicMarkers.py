@@ -8,7 +8,7 @@ bl_info = {
     "location": "View3D > Sidebar > Music Markers",
     "description": "Add BPM markers to the timeline.",
     "support": "COMMUNITY",
-    "version": (1, 2, 1),
+    "version": (1, 2, 2),
     "blender": (2, 80, 0),
 }
 
@@ -46,7 +46,7 @@ class MusicMarkersProperties(bpy.types.PropertyGroup):
 
     music_markers_start_frame: bpy.props.IntProperty(
         name="Start Frame",
-        description="Start Frame. 0 to use timeline start",
+        description="0 to use timeline start",
         default=0,
         min=0,
         step=1
@@ -54,7 +54,7 @@ class MusicMarkersProperties(bpy.types.PropertyGroup):
 
     music_markers_end_frame: bpy.props.IntProperty(
         name="End Frame",
-        description="End Frame. 0 to use timeline end",
+        description="0 to use timeline end",
         default=0,
         min=0,
         step=1
@@ -63,7 +63,7 @@ class MusicMarkersProperties(bpy.types.PropertyGroup):
     # Add custom property for framerate
     music_markers_framerate: bpy.props.IntProperty(
         name="Framerate",
-        description="Custom framerate for markers",
+        description="Framerate used to calculate marker seperation",
         default=24,  # Set a default value (change this to the desired default framerate)
         min=1,
         step=1,
@@ -73,7 +73,7 @@ class MusicMarkersProperties(bpy.types.PropertyGroup):
     # Add custom property to synchronize scene's framerate with the custom framerate value
     music_markers_sync_framerate: bpy.props.BoolProperty(
         name="Sync Framerate",
-        description="Synchronize the scene's framerate with this field",
+        description="Synchronize the scene's framerate with this value",
         default=True,
         update=update_framerate  # Call the update_framerate function when the property changes
     )
