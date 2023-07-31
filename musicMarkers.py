@@ -8,7 +8,7 @@ bl_info = {
     "location": "View3D > Sidebar > Music Markers",
     "description": "Add BPM markers to the timeline.",
     "support": "COMMUNITY",
-    "version": (1, 2, 0),
+    "version": (1, 2, 1),
     "blender": (2, 80, 0),
 }
 
@@ -38,7 +38,7 @@ class MusicMarkersProperties(bpy.types.PropertyGroup):
 
     music_markers_time_sig_denominator: bpy.props.IntProperty(
         name="Denominator",
-        description="Beat length. 1 beat is locked to quarter notes currently. Changing this value does nothing at the moment",
+        description="Beat length. Measured in notes. 8 = 8th notes",
         default=4,
         min=2,
         step=1
