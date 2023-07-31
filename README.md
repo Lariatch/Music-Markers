@@ -11,10 +11,10 @@ The format for naming markers is as follows:
 
   In 4/4:
   
-    1, 1.2, 1.3, 1.4, 2, 2.2, 2.3 etc.
+    1, 1.2, 1.3, 1.4, 2, 2.2, 2.3, 2.4
   If set to 3/4:
   
-    1, 1.2, 1.3, 2, 2.2, 2.3 etc.
+    1, 1.2, 1.3, 2, 2.2, 2.3
     
   Currently, changing the denominator of the time signature does not work. 1 beat is always set to a quarter note.
   
