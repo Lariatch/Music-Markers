@@ -59,3 +59,7 @@ Sets new markers on the timeline based off of the values of the above fields. Th
 
 ### Clear Markers
 Clears all markers on the timeline, including those not created by the addon.
+
+## To Do
+Changing BPM and time signature.
+FPS to seconds switch for all fields.
