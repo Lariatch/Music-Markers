@@ -16,8 +16,10 @@ The format for naming markers is as follows:
   
     1, 1.2, 1.3, 2, 2.2, 2.3
   If set to 6/8:
+  
     1, 1.2, 1.3, 1.4, 1.5, 1.6
-    with markers placed every 8th note.
+    
+  With markers placed every 8th note.
   
   
 ### Tap Tempo
