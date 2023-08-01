@@ -8,7 +8,7 @@ bl_info = {
     "location": "View3D > Sidebar > Music Markers",
     "description": "Add BPM markers to the timeline.",
     "support": "COMMUNITY",
-    "version": (1, 2, 2),
+    "version": (1, 2, 3),
     "blender": (2, 80, 0),
 }
 
@@ -92,37 +92,31 @@ class MUSIC_MARKERS_PT_Panel(bpy.types.Panel):
         layout = self.layout
         props = context.scene.music_markers_props
 
-        # Display a button for tap tempo
-        layout.operator("scene.tap_tempo", text="Tap Tempo")
+        box = layout.box()
+        box.label(text="Tempo:")
+        box.operator("scene.tap_tempo", text="Tap Tempo")
+        box.prop(props, "music_markers_bpm")
 
-        # Display an input field for the 'BPM' value
-        layout.prop(props, "music_markers_bpm")
-
-        # Display input fields for the time signature
         box = layout.box()
         box.label(text="Time Signature:")
         row = box.row()
         row.prop(props, "music_markers_time_sig_numerator", text="Numerator")
         row.prop(props, "music_markers_time_sig_denominator", text="Denominator")
 
-        # Display input fields for the start and end frame times
         box = layout.box()
         box.label(text="Frame Range:")
         row = box.row()
-        row.prop(props, "music_markers_start_frame", text="Start Frame")
-        row.prop(props, "music_markers_end_frame", text="End Frame")
+        row.prop(props, "music_markers_start_frame", text="Start")
+        row.prop(props, "music_markers_end_frame", text="End")
 
-        # Display a field for the framerate
-        row = layout.row(align=True)
-        row.prop(props, "music_markers_framerate", text="Framerate")
-
-        # Display a tickbox to synchronize scene's framerate with the custom framerate value
+        box = layout.box()
+        box.label(text="Framerate:")
+        row = box.row()
+        row.prop(props,"music_markers_framerate", text="FPS")
         row.prop(props, "music_markers_sync_framerate", text="Sync")
 
-        # Display a button to set the markers
         layout.operator("scene.set_music_markers", text="Set Markers")
 
-        # Display a button to clear the markers
         layout.operator("scene.clear_music_markers", text="Clear Markers")
 
 class SCENE_OT_ClearMusicMarkers(bpy.types.Operator):
