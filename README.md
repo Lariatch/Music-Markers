@@ -62,4 +62,5 @@ Clears all markers on the timeline, including those not created by the addon.
 
 ## To Do
 Changing BPM and time signature.
+
 FPS to seconds switch for all fields.
