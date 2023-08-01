@@ -52,7 +52,10 @@ The frame the first marker is placed on.
 The last frame considered for placing markers.
 
 ### Framerate
-Sets the framerate used to calculate marker distance. If 'Sync' is checked the scenes framerate will copy this value.
+Sets the framerate used to calculate marker distance. 
+
+#### Sync
+If checked the scenes framerate will copy this value.
 
 ### Set markers
 Sets new markers on the timeline based off of the values of the above fields. This will clear all markers on the timeline, including those not created by the addon before placing new ones.
