@@ -61,6 +61,6 @@ Sets new markers on the timeline based off of the values of the above fields. Th
 Clears all markers on the timeline, including those not created by the addon.
 
 ## To Do
-Changing BPM and time signature.
+BPM and time signature switch mid timeline.
 
 FPS to seconds switch for all fields.
