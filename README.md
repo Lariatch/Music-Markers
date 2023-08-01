@@ -8,7 +8,7 @@ https://github.com/Lariatch/Music-Markers/releases
 
 In Blender, Edit > Preferences > Add-ons > Install > musicmarkers.zip
 
-Functionality found in sidebar of 3D viewport. Press N to bring out.
+Addon menu found in sidebar of 3D viewport. Press N.
 
 ## Usage
 
