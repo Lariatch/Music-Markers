@@ -71,3 +71,7 @@ FPS to seconds switch for all fields.
 Use playhead for start or end frame range.
 
 Auto update markers.
+
+## Bugs
+
+Ask ChatGPT.
