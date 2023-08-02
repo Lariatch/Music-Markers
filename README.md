@@ -67,3 +67,7 @@ Clears all markers on the timeline, including those not created by the addon.
 BPM and time signature switch mid timeline.
 
 FPS to seconds switch for all fields.
+
+Use playhead for start or end frame range.
+
+Auto update markers.
