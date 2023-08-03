@@ -63,15 +63,6 @@ Sets new markers on the timeline based off of the values of the above fields. Th
 ### Clear Markers
 Clears all markers on the timeline, including those not created by the addon.
 
-## To Do
-BPM and time signature switch mid timeline.
-
-FPS to seconds switch for all fields.
-
-Use playhead for start or end frame range.
-
-Auto update markers.
-
 ## Bugs
 
 Ask ChatGPT.
